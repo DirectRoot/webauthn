@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "https://directroot.github.io/phishing-resistant"
+baseURL = "https://phishing-resistant.direct-root.com"
 # theme
 theme = "dot-hugo"
 # site title

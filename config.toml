@@ -4,7 +4,7 @@ baseURL = "https://webauthn.direct-root.com/"
 # theme
 theme = "dot-hugo"
 # site title
-title = "Resist The Phish"
+title = "A Role Based Guide to Deploying WebAuthn"
 # disable language
 disableLanguages = ["fr"]
 # google analytics
@@ -62,20 +62,20 @@ copyright = "Copyright &copy; 2023 Chris Green. Theme by [Gethugothemes](https:/
 
 # banner
 [Languages.en.params.banner]
-title = "How to "
-subtitle = ""
+title = "Use WebAuthn to Stop Phishing"
+subtitle = "Rely on technology, not just education, to stop phising in your business"
 bg_image = "images/banner.jpg"
-placeholder = "Search"
+placeholder = "Search the guide"
 
 # call to action
 [Languages.en.params.cta]
 enable = true
 title = "Need more help or advice? "
-content = "Making your business phishing resistant is not easy, if you've got more questions or want to book a chat then you're welcome to contact me"
+content = "Making your business phishing resistant is not easy, if you've got more questions or want to book a chat then please use the contact button"
 # call to action button
 [Languages.en.params.cta.button]
 enable = true
-label = "contact us"
+label = "Contact"
 link = "contact/"
 
 

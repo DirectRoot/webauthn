@@ -63,7 +63,7 @@ copyright = "Copyright &copy; 2023 Chris Green. Theme by [Gethugothemes](https:/
 # banner
 [Languages.en.params.banner]
 title = "Use WebAuthn to Stop Phishing"
-subtitle = "This <b>completely free</b> guide will explain how to rely on technology, not just education, to stop phising in your business"
+subtitle = "This <b>completely free</b> guide will explain how to rely on technology, not just education, to stop phishing in your business"
 bg_image = "images/banner.jpg"
 placeholder = "Search the guide"
 

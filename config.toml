@@ -4,7 +4,7 @@ baseURL = "https://phishing-resistant.direct-root.com/"
 # theme
 theme = "dot-hugo"
 # site title
-title = "Dot"
+title = "Phishing Resistant Authentication - The Practical Guide"
 # disable language
 disableLanguages = ["fr"]
 # google analytics
@@ -23,8 +23,8 @@ logo_white = ""
 # when logo is empty, it will shown your site title
 
 # OpenGraph / Twitter Card metadata
-description = "This is meta description"
-author = "Themefisher"
+description = "A practical guide to the challenges of phishing resistant authentication for businesses"
+author = "Chris Green (direct-root.com)"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
 # customize color
@@ -44,24 +44,14 @@ contact_form_action = "#" # contact form works with : https://formspree.io
 
 ############################## social links ##############################
 [[params.social]]
-icon = "ti-facebook" # themify icon pack : https://themify.me/themify-icons
-name = "Facebook"
-link = "#"
-
-[[params.social]]
-icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
-name = "Twitter"
-link = "#"
-  
-[[params.social]]
 icon = "ti-github" # themify icon pack : https://themify.me/themify-icons
 name = "Github"
-link = "#"
+link = "https://github.com/directroot"
   
 [[params.social]]
 icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
 name = "Linkedin"
-link = "#"
+link = "https://www.linkedin.com/in/chris-james-green/"
 
 ################################ English Language ######################
 [Languages.en]

@@ -1,6 +1,6 @@
 ---
 title: "Leaders"
-date: 2018-12-28T11:02:05+06:00
+date: 2023-03-12T00:00:00-05:00
 icon: "ti-briefcase"
 description: "Why you should take WebAuthn seriously"
 type: "docs"

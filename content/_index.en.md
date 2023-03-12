@@ -1,3 +1,3 @@
-This guide was written to answer the practical questions associated with deploying WebAuthn for internal authentication within a business. I've been very careful to provide knowledge & advice that will be applicable in most cases, regardless of your choice of vendor(s).
+This guide was written to answer the practical questions associated with deploying WebAuthn for internal authentication. I've been very careful to provide knowledge & advice that will be applicable in most cases, regardless of your choice of vendor(s).
 
 I have personally found it difficult to get a straight answer and end-to-end guidance about WebAuthn because guides I found were trying to sell me their product, or evangelize about WebAuthn in general. It's easy to convince Security/IT geeks (myself included) about the value of WebAuthn, this guide helps you take your excitement about WebAuthn and <b>actually apply it to your environment</b>.

@@ -8,64 +8,33 @@ draft: false
 keywords: [""]
 ---
 
-Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.
+### Definition
 
-{{< notice note >}}
-  This is a simple note.
-{{</ notice >}}
+Phishing is the term used for a malicious attempt to gain privileged information from someone, through convincing them to enter that information into a website that _seems_ legitmate. 
 
-{{< notice tip >}}
-  This is a simple tip.
-{{</ notice >}}
+The information targeted is often the login credentials for a popular online service, especially those offering a direct financial insentive or wider access to other systems.
 
 {{< notice info >}}
-  This is a simple info.
+  Corporate Single Sign On (SSO) systems offer a huge reward for a malicious attacker who can phish their way to unauthorized access
 {{</ notice >}}
 
 
-{{< tabs >}}
-  {{< tab "first" >}}
-   This is first tab
-  {{</ tab >}}
+### Social Engineering
 
-  {{< tab "second" >}}
-  this is second tab
-  {{</ tab >}}
+Phishers often rely on using social pressure or "high-stakes" situations to encourage a sense of panic or urgency in the victim, causing them to act without thinking.
 
-  {{< tab "third" >}}
-  this is third tab
-  {{</ tab >}}
-{{</ tabs >}}
+Victims might find themselves receiving a text claiming to be from their IT department, ordering them to sign in and reset their credentials immediately to help **stop** a security breach; in reality, they're being tricked into creating the breach!
 
-Nulla non sollicitudin. Morbi sit amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula eleifend velit, luctus mattis ante nulla condimentum nulla. Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.
+As the value of the information a user holds increases, so can the effort put into phishing them. Business leaders are often targetting through "spear phishing", where personalized information is used to make the attack more convincing. The secrecy and urgency around business deals or other critical C-Level events can present highly valuable phishing opportunities.
 
-### Image Example
+{{< notice tip >}}
+  Always take a moment to question a task that has come to you with very high urgency and through an unusual channel. Separately confirm actions with the claimed sender, through a different method
+{{</ notice >}}
 
-Nunc porta malesuada porta. Etiam tristique vestibulum dolor at ultricies. Proin hendrerit sapien sed erat fermentum, at commodo velit consectetur.
+### Your Second Factor Isn't Good Enough
 
-![image example](img-1.jpg "image")
+Unless your business is already using phishing resistant WebAuthn (pronounced "web-auth-N"), a phishing attack won't be stopped by your existing two factor authentication (2FA).
 
-Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.
-
-### Example Of Code Block
-
-In accumsan lacus ac neque maximus dictum. Phasellus eleifend leo id mattis bibendum. Curabitur et purus turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-
-```html
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png" >
-  <script src="/assets/js/main.js"></script>
-</head>
-```
-
-### Text and Quote
-
-Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna turpis.
-
-> Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet
-
-Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.
+{{< notice warning >}}
+  Simply having 2FA isn't enough. If you haven't already heard the term "WebAuthn" in your business, then your 2FA is likely vulnerable to phishing attacks 
+{{</ notice >}}

@@ -23,7 +23,7 @@ The information targeted is often the login credentials for a popular online ser
 
 Phishers often rely on using social pressure or "high-stakes" situations to encourage a sense of panic or urgency in the victim, causing them to act without thinking.
 
-Victims might find themselves receiving a text claiming to be from their IT department, ordering them to sign in and reset their credentials immediately to help **stop** a security breach; in reality, they're being tricked into creating the breach!
+Victims might find themselves receiving an email or SMS claiming to be from their IT department, ordering them to sign in and reset their credentials immediately to help **stop** a security breach; in reality, they're being tricked into creating the breach!
 
 As the value of the information a user holds increases, so can the effort put into phishing them. Business leaders are often targetting through "spear phishing", where personalized information is used to make the attack more convincing. The secrecy and urgency around business deals or other critical C-Level events can present highly valuable phishing opportunities.
 

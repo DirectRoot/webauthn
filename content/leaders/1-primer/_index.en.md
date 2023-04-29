@@ -10,12 +10,12 @@ keywords: [""]
 
 ### Definition
 
-Phishing is the term used for a malicious attempt to gain privileged information from someone, through convincing them to enter that information into a website that _seems_ legitmate. 
+Phishing is the term used for a malicious attempt to gain privileged information from someone, through convincing them to enter that information into a website that _seems_ legitmate.
 
 The information targeted is often the login credentials for a popular online service, especially those offering a direct financial insentive or wider access to other systems.
 
 {{< notice info >}}
-  Corporate Single Sign On (SSO) systems offer a huge reward for a malicious attacker who can phish their way to unauthorized access
+  Phishing is a prevalent attack on organizations; 75% of those surveyed<sup>1</sup> reported an email-based attack in 2022, this includes phishing via email.
 {{</ notice >}}
 
 
@@ -38,3 +38,7 @@ Unless your business is already using phishing resistant WebAuthn (pronounced "w
 {{< notice warning >}}
   Simply having 2FA isn't enough. If you haven't already heard the term "WebAuthn" in your business, then your 2FA is likely vulnerable to phishing attacks 
 {{</ notice >}}
+
+### References
+
+1. [Email Security Trends Report 2023](https://www.barracuda.com/reports/email-security-trends-report-2023), accessed May 2023

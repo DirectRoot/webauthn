@@ -8,64 +8,45 @@ draft: false
 keywords: [""]
 ---
 
-Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.
+### Weak Second Factors
 
-{{< notice note >}}
-  This is a simple note.
-{{</ notice >}}
+2FA will remain more secure than using a single factor, but malicious actors have evolved so that the most popular second factors are now relatively easy to circumvent.
 
-{{< notice tip >}}
-  This is a simple tip.
-{{</ notice >}}
+#### SMS
+
+It's generally accepted that SMS One Time Passcodes (OTPs) are insecure in both consumer & corporate settings. "Sim swapping" attacks allow a malicious takeover of a phone number, meaning the OTP can be delivered directly to the attacker.
+
+#### Time-based One Time Passcodes (TOTP)
+
+A TOTP from a mobile application is generally the most secure second factor available to consumers and is often accepted in corporations too.
+
+Whilst the TOTP rotating every thirty seconds seems to make it more secure, the 0ktapus hacking campaign<sup>1</sup> has proven criminals are very capable of phishing employees for password + TOTP _in real time_ to gain access.
 
 {{< notice info >}}
-  This is a simple info.
+  0ktapus has led to over 130 companies, 10k passwords and 5k TOTPs being compromised
 {{</ notice >}}
 
+#### Push Notifications
 
-{{< tabs >}}
-  {{< tab "first" >}}
-   This is first tab
-  {{</ tab >}}
+Whilst removing (T)OTPs means there's no passcode to phish, relying on app push notifications doesn't solve the problem. After phishing or discovering an employees password, a hacker can utilize MFA fatigue to eventually gain access.
 
-  {{< tab "second" >}}
-  this is second tab
-  {{</ tab >}}
+MFA fatigue requires bombarding the victim with constant notifications until they relent and approve the sign in. This sounds far-fetched until you imagine receiving multiple notifications at night, whilst driving or during critical meetings. MFA fatigue was successfully used to compromise Uber in 2022<sup>2</sup>.
 
-  {{< tab "third" >}}
-  this is third tab
-  {{</ tab >}}
-{{</ tabs >}}
+{{< notice warning >}}
+  Push notifications can't be phished, but the human element makes them vulnerable to attack
+{{</ notice >}}
 
-Nulla non sollicitudin. Morbi sit amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula eleifend velit, luctus mattis ante nulla condimentum nulla. Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.
+### Relying on Education
 
-### Image Example
+The approach to stopping phishing in corporations has often relied on educating the user and following up with phishing tests, reports & extra education for those deemed to have "failed". Whilst security education is beneficial, it is not enough to stop a sustained phishing campaign.
 
-Nunc porta malesuada porta. Etiam tristique vestibulum dolor at ultricies. Proin hendrerit sapien sed erat fermentum, at commodo velit consectetur.
+Consider vehicle safety, we educate drivers to avoid mistakes but we also accept that they'll happen. Because of this, we use technology to improve the outcomes when they do. Picking a weak second factor and relying on education to stop phishing is equivalent to removing seatbelts and telling drivers, "**don't mess up**".
 
-![image example](img-1.jpg "image")
+{{< notice tip >}}
+  Phishing-resistant WebAuthn removes human error
+{{</ notice >}}
 
-Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.
+### References
 
-### Example Of Code Block
-
-In accumsan lacus ac neque maximus dictum. Phasellus eleifend leo id mattis bibendum. Curabitur et purus turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-
-```html
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png" >
-  <script src="/assets/js/main.js"></script>
-</head>
-```
-
-### Text and Quote
-
-Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna turpis.
-
-> Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet
-
-Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.
+1. [Roasting 0ktapus: The Phishing Campaign Going After Okta Identity Credentials](https://www.group-ib.com/blog/0ktapus/), accessed May 2023
+1. [Multi-Factor Authentication Fatigue Key Factor in Uber Breach](https://www.infoq.com/news/2022/09/Uber-breach-mfa-fatigue/), accessed May 2023

@@ -8,64 +8,70 @@ draft: false
 keywords: [""]
 ---
 
-Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.
+### How Much Will This Cost?
 
-{{< notice note >}}
-  This is a simple note.
-{{</ notice >}}
-
-{{< notice tip >}}
-  This is a simple tip.
-{{</ notice >}}
-
-{{< notice info >}}
-  This is a simple info.
-{{</ notice >}}
-
+With some exceptions for large companies, the answer is often **pay as much as you want**.
 
 {{< tabs >}}
-  {{< tab "first" >}}
-   This is first tab
-  {{</ tab >}}
 
-  {{< tab "second" >}}
-  this is second tab
-  {{</ tab >}}
+  {{< tab "Less than 100 people" >}}
+  Deploy WebAuthn for little to no money, with relative ease
+  {{< /tab >}}
 
-  {{< tab "third" >}}
-  this is third tab
-  {{</ tab >}}
-{{</ tabs >}}
+  {{< tab "100 to 1000 people" >}}
+  Paying for WebAuthn technology is a good idea
+  {{< /tab >}}
 
-Nulla non sollicitudin. Morbi sit amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula eleifend velit, luctus mattis ante nulla condimentum nulla. Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.
+  {{< tab "Over 1000 people" >}}
+  Invest in your WebAuthn deployment, for the sake of your users & technical teams!
+  {{< /tab >}}
+  
+{{< /tabs >}}
 
-### Image Example
+### What Do We Need to Buy?
 
-Nunc porta malesuada porta. Etiam tristique vestibulum dolor at ultricies. Proin hendrerit sapien sed erat fermentum, at commodo velit consectetur.
+The technology costs for WebAuthn are the **SSO platform** and **hardware authenticators** that enable users to sign in.
 
-![image example](img-1.jpg "image")
+{{< notice tip >}}
+There are also hidden costs in **operational complexity, user education & support**. Appropriate spending on technology can reduce the hidden costs
+{{</ notice >}}
 
-Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.
+#### The SSO Platform
 
-### Example Of Code Block
+{{< tabs >}}
 
-In accumsan lacus ac neque maximus dictum. Phasellus eleifend leo id mattis bibendum. Curabitur et purus turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+  {{< tab "Free" >}}
+  If you're already using a SSO platform built for the web, the chances are you've already got WebAuthn support
+  {{< /tab >}}  
 
-```html
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png" >
-  <script src="/assets/js/main.js"></script>
-</head>
-```
+  {{< tab "Low Cost" >}}
+  Good open-source SSO platforms should support WebAuthn, for example <a href=https://www.keycloak.org/>Keycloak</a>. You will incur some extra costs to have your own team install, run & maintain this software
+  {{< /tab >}}
 
-### Text and Quote
+  {{< tab "Paid" >}}
+  Major Identity as a Service (IDaaS) providers should all support WebAuthn, for example <a href=https://www.okta.com/>Okta</a> or <a href=https://www.onelogin.com/>OneLogin</a>
+  {{< /tab >}}
+  
+{{< /tabs >}}
 
-Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna turpis.
 
-> Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet
+#### The Hardware Authenticators
 
-Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.
+{{< tabs >}}
+
+  {{< tab "Free" >}}
+  Using Chrome or Safari on relatively modern hardware will enable you to use your devices themselves as <b>platform authenticators</b>, Firefox should be adding support for this in the future. Both mobile & desktop/laptop devices can be used as platform authenticators 
+  <br><br>
+  You will incur some extra operational complexity when users need to sign into the SSO platform from multiple devices, because the authenticator is tied to each device. This is explained in more detail within the <a href=/security-it>Security & IT section</a>
+  {{< /tab >}}  
+
+  {{< tab "Paid" >}}
+  <b>Cross platform authenticators</b> are external hardware resembling a USB stick, allowing users to register the authenticator once and use it on multiple devices.
+  <br><br>
+  Modern versions of <a href=https://www.yubico.com/>Yubico</a>'s well-known Yubikey can act as WebAuthn authenticators. See the <a href=/security-it>Security & IT section</a> for differences between Yubico OTP and WebAuthn.
+  <br><br>
+  Google also sell a viable authenticator as the <a href=https://cloud.google.com/titan-security-key>Titan Security Key</a>. These can be cheaper per unit than a Yubikey, but larger or more dispersed organizations might prefer to buy Yubikeys and use Yubico's <a href=https://www.yubico.com/products/yubienterprise-delivery/>YubiEnterprise Delivery</a> to handle logistics.
+
+  {{< /tab >}}
+  
+{{< /tabs >}}

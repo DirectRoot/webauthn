@@ -8,64 +8,44 @@ draft: false
 keywords: ["handle"]
 ---
 
-Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.
+### Quicker Authentication
 
-{{< notice note >}}
-  This is a simple note.
-{{</ notice >}}
+Assuming your IT already requires Two Factor Authentication (2FA) to access systems, you'll find WebAuthn cuts your authentication time down.
 
-{{< notice tip >}}
-  This is a simple tip.
-{{</ notice >}}
+Traditional 2FA might involve receiving an SMS message, push notification or retreiving a six digit code from an app. All of these require multiple systems to communicate & you to switch your focus to find the code or approve the push notification.
 
 {{< notice info >}}
-  This is a simple info.
+WebAuthn reduces authentication time by cutting reliance on multiple systems
 {{</ notice >}}
 
+### More Security
 
-{{< tabs >}}
-  {{< tab "first" >}}
-   This is first tab
-  {{</ tab >}}
+WebAuthn automatically creates unique authentication secrets for use with each website. WebAuthn also stops you ever sharing your authentication secrets with the legitimate or illegitimate websites.
 
-  {{< tab "second" >}}
-  this is second tab
-  {{</ tab >}}
+{{< notice tip >}}
+Ask your IT & Security team to reduce their reliance on phishing education by deploying WebAuthn
+{{</ notice >}}
 
-  {{< tab "third" >}}
-  this is third tab
-  {{</ tab >}}
-{{</ tabs >}}
+### Fewer Distractions
 
-Nulla non sollicitudin. Morbi sit amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula eleifend velit, luctus mattis ante nulla condimentum nulla. Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.
+A WebAuthn authenticatior is required to use WebAuthn, this can either be your device itself (platform authenticator) or a USB-like security key (cross-platform authenticator).
 
-### Image Example
+Either one can stop you needing your phone to authenticate, meaning you don't see **those** notifications that like to distract you at work!
 
-Nunc porta malesuada porta. Etiam tristique vestibulum dolor at ultricies. Proin hendrerit sapien sed erat fermentum, at commodo velit consectetur.
+{{< notice tip >}}
+Ask your leaders to help improve productivity & focus by deploying WebAuthn
+{{</ notice >}}
 
-![image example](img-1.jpg "image")
+### Optional Biometric Use
 
-Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.
+WebAuthn **does not** have to require the use of biometrics, even though some platforms will often refer to it as "biometric authentication".
 
-### Example Of Code Block
+WebAuthn **does** require proof of "user presence" **or** "user verification"<sup>1</sup>, but neither of these strictly require biometrics.
 
-In accumsan lacus ac neque maximus dictum. Phasellus eleifend leo id mattis bibendum. Curabitur et purus turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+{{< notice info >}}
+Platform authenticators can accept a device password for user verification. Cross-platform authenticators can use a touch sensor for user presence, which is not the same as a fingerprint sensor
+{{</ notice >}}
 
-```html
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png" >
-  <script src="/assets/js/main.js"></script>
-</head>
-```
+### References
 
-### Text and Quote
-
-Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna turpis.
-
-> Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet
-
-Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.
+1. [WebAuthn Authentication Ceremony Definition](https://www.w3.org/TR/webauthn/#authentication-ceremony) ("...this includes a test of user presence or user verification"), accessed May 2023

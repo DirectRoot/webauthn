@@ -22,6 +22,10 @@ WebAuthn is gaining traction and being touted as the beginning of a passwordless
   Using WebAuthn as a second factor is good enough, you don't need to go full "passwordless" to benefit
 {{</ notice >}}
 
+{{< notice info >}}
+  Although often used with biometrics, WebAuthn does not **require** their use. You can go completely phishing-resistant without them.
+{{</ notice >}}
+
 ### References
 
 1. [The Mechanics of a Sophisticated Phishing Scam and How We Stopped It](https://blog.cloudflare.com/2022-07-sms-phishing-attacks/), accessed May 2023

@@ -28,7 +28,7 @@ Victims might find themselves receiving an email or SMS claiming to be from thei
 As the value of the information a user holds increases, so can the effort put into phishing them. Business leaders are often targetting through "spear phishing", where personalized information is used to make the attack more convincing. The secrecy and urgency around business deals or other critical C-Level events can present highly valuable phishing opportunities.
 
 {{< notice tip >}}
-  Always take a moment to question a task that has come to you with very high urgency and through an unusual channel. Separately confirm actions with the claimed sender, through a different method
+  Always question tasks that come to you with very high urgency and through an unusual channel. Separately confirm the action with the claimed sender, through a different method of communication
 {{</ notice >}}
 
 ### Your Second Factor Isn't Good Enough
@@ -36,7 +36,7 @@ As the value of the information a user holds increases, so can the effort put in
 Unless your business is already using phishing resistant WebAuthn (pronounced "web-auth-N"), a phishing attack won't be stopped by your existing two factor authentication (2FA).
 
 {{< notice warning >}}
-  Simply having 2FA isn't enough. If you haven't already heard the term "WebAuthn" in your business, then your 2FA is likely vulnerable to phishing attacks 
+  Simply having 2FA isn't enough. If you **haven't** already heard the term "WebAuthn" in your business, then your 2FA is likely vulnerable to phishing attacks 
 {{</ notice >}}
 
 ### References

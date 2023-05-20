@@ -18,7 +18,7 @@ It's generally accepted that SMS One Time Passcodes (OTPs) are insecure in both 
 
 #### Time-based One Time Passcodes (TOTP)
 
-A TOTP from a mobile application is generally the most secure second factor available to consumers and is often accepted in corporations too.
+A TOTP from a mobile application is often the most secure second factor available to consumers and is regularly accepted in corporations too.
 
 Whilst the TOTP rotating every thirty seconds seems to make it more secure, the 0ktapus hacking campaign<sup>1</sup> has proven criminals are very capable of phishing employees for password + TOTP _in real time_ to gain access.
 
@@ -43,7 +43,7 @@ The approach to stopping phishing in corporations has often relied on educating 
 Consider vehicle safety, we educate drivers to avoid mistakes but we also accept that they'll happen. Because of this, we use technology to improve the outcomes when they do. Picking a weak second factor and relying on education to stop phishing is equivalent to removing seatbelts and telling drivers, "**don't mess up**".
 
 {{< notice tip >}}
-  Phishing-resistant WebAuthn removes human error
+  Using phishing-resistant WebAuthn removes the human error that phishing relies upon
 {{</ notice >}}
 
 ### References

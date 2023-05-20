@@ -8,64 +8,32 @@ draft: false
 keywords: ["money","payment"]
 ---
 
-Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.
+### The Fight Against Phishing
 
-{{< notice note >}}
-  This is a simple note.
-{{</ notice >}}
+Proving your identity (authentication) has a new technology called WebAuthn (pronounced "web-auth-N"), which is gaining popularity for stopping credential phishing attacks.
 
 {{< notice tip >}}
-  This is a simple tip.
+It's not required, but can read more about phishing in the [leaders section of this guide](/leaders/).
 {{</ notice >}}
+
+### The Future is Passwordless
+
+Over the next few years, you're likely to hear more use of the term "passwordless". This is a term for authentication methods that **do not** rely on passwords or "shared secrets" to prove a user's identity.
 
 {{< notice info >}}
-  This is a simple info.
+A shared secret is string of characters, like a password or digit code, which you provide to a website during authentication. The website uses your knowledge of the shared secret to prove your identity.
 {{</ notice >}}
 
 
-{{< tabs >}}
-  {{< tab "first" >}}
-   This is first tab
-  {{</ tab >}}
+Unfortunately, criminals have learnt to trick users into revealing the secrets required to authenticate; they then use the secrets themselves to gain unauthorized access.
 
-  {{< tab "second" >}}
-  this is second tab
-  {{</ tab >}}
+### WebAuthn is Passwordless
 
-  {{< tab "third" >}}
-  this is third tab
-  {{</ tab >}}
-{{</ tabs >}}
+WebAuthn is a passwordless form of authentication<sup>1</sup>, which can be deployed to make authentication easier and more secure.
 
-Nulla non sollicitudin. Morbi sit amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula eleifend velit, luctus mattis ante nulla condimentum nulla. Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.
+{{< notice tip >}}
+Use this guide to help educate yourself and others in your organization about the use of WebAuthn
+{{</ notice >}}
 
-### Image Example
-
-Nunc porta malesuada porta. Etiam tristique vestibulum dolor at ultricies. Proin hendrerit sapien sed erat fermentum, at commodo velit consectetur.
-
-![image example](img-1.jpg "image")
-
-Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.
-
-### Example Of Code Block
-
-In accumsan lacus ac neque maximus dictum. Phasellus eleifend leo id mattis bibendum. Curabitur et purus turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-
-```html
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png" >
-  <script src="/assets/js/main.js"></script>
-</head>
-```
-
-### Text and Quote
-
-Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna turpis.
-
-> Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet
-
-Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.
+### References
+1. [WebAuthn Guide](https://webauthn.guide/), accessed May 2023

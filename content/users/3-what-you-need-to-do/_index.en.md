@@ -8,64 +8,31 @@ draft: false
 keywords: [""]
 ---
 
-Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interam.
+If WebAuthn is being deployed in your organization, there are some terms and processes that you'll need to become familiar with.
 
-{{< notice note >}}
-  This is a simple note.
-{{</ notice >}}
+### Terminology
 
-{{< notice tip >}}
-  This is a simple tip.
-{{</ notice >}}
+* `Authenticator` - The hardware used to help you authenticate
+* `Platform authenticator` - An authenticator built into a device like a laptop or phone
+* `Cross-platform authenticator` - An authenticator that can be used across different devices, like a Yubikey or Google Titan Key
+* `Passkey` - An implementation of WebAuthn meant to make usage easier for consumers. When you're registering a platform authenticator, you might be prompted to save a passkey.
+
+### Registration
+
+Once you know what kind of authenticator(s) your organization is going to use, you'll need to go through a registration process; it's likely that this will happen within your Single Sign-On (SSO) platform.
+
+You'll first need to login using your existing 2FA and start the registration process from your account settings. Once you've completed the registration process, your authenticator can be used when signing in.
 
 {{< notice info >}}
-  This is a simple info.
+Each new system where you want to use WebAuthn will require you to go through a registration process. But, if your applications are well integrated with SSO then you probably won't need to register anywhere else.
 {{</ notice >}}
 
+### Authentication
 
-{{< tabs >}}
-  {{< tab "first" >}}
-   This is first tab
-  {{</ tab >}}
+When authenticating using WebAuthn, your browser might ask you what kind of authenticator you want to use. A cross-platform authenticator might be referred to as a "security key" & using a platform authenticator could be a "passkey".
 
-  {{< tab "second" >}}
-  this is second tab
-  {{</ tab >}}
+If you're using a cross-platform authenticator that works over USB (like a Yubikey), it only has to be inserted into your device during authentication. You can remove it once you've signed in.
 
-  {{< tab "third" >}}
-  this is third tab
-  {{</ tab >}}
-{{</ tabs >}}
-
-Nulla non sollicitudin. Morbi sit amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula eleifend velit, luctus mattis ante nulla condimentum nulla. Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.
-
-### Image Example
-
-Nunc porta malesuada porta. Etiam tristique vestibulum dolor at ultricies. Proin hendrerit sapien sed erat fermentum, at commodo velit consectetur.
-
-![image example](img-1.jpg "image")
-
-Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.
-
-### Example Of Code Block
-
-In accumsan lacus ac neque maximus dictum. Phasellus eleifend leo id mattis bibendum. Curabitur et purus turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-
-```html
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png" >
-  <script src="/assets/js/main.js"></script>
-</head>
-```
-
-### Text and Quote
-
-Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna turpis.
-
-> Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet
-
-Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis. Phasellus at massa sit amet ante semper fermentum sed eget lectus. Quisque id dictum magna, et dapibus turpis.
+{{< notice tip >}}
+Registering a **platform** authenticator will only allow you sign in from _that device_. A **cross-platform authenticator** can be used on any device that supports it, for example it could be registered via a laptop, removed & used with a phone
+{{</ notice >}}

@@ -8,20 +8,34 @@ draft: false
 keywords: [""]
 ---
 
-### Global site parameters
+### Eliminate TOTP & Push
 
-On top of [Hugo global configuration](https://gohugo.io/overview/configuration/), **Dot** lets you define the following parameters in your `config.toml` (here, values are default).
+Wherever it is technically possible, you should be removing the use of TOTP & push notification as second factors.
 
-Note that some of these parameters are explained in details in other sections of this documentation.
+WebAuthn is currently considered the most secure form of second factor available<sup>1</sup>, with push notifications second if WebAuthn isn't possible (more on that later).
 
-```toml
-[params]
-  # Prefix URL to edit current page. 
-  # Useful to give opportunity to people to create merge request for your doc.
-  # See the config.toml file from this documentation site to have an example.
-  # Javascript and CSS cache are automatically busted when new version of site is generated. 
-  # Order sections in menu by "weight"
-  # Call to action is default enabled, if you want to disable it. just change the 
-  enable = false
-  # You can change banner title and other text from the config file.
-```
+{{< notice tip >}}
+  Accounts are only as secure as their least secure authentication method. _Enforce_ use of WebAuthn to improve your security. 
+{{</ notice >}}
+
+{{< notice warning >}}
+  Aim to achieve WebAuthn as a second factor, not a single passwordless authentication mechanism. Single factor WebAuthn is very difficult to make both secure and usable.
+{{</ notice >}}
+
+### Improve User Experience
+
+Push notifications and retrieving TOTPs is slow, I used to regularly experience ten second delays between a push notification being sent, acknowledging it and being authenticated.
+
+This doesn't sound like much, until you consider that one second is about the limit of time before a user's thought process is interrupted<sup>2</sup>.
+
+Compound the distraction time with having to pick up a _purposefully distracting_ phone to receive the notification, and it's easy to see how authentication flows become annoying for users by distracting them from their work.
+
+{{< notice info >}}
+Authenticating using WebAuthn allows users to leave their phone away from where they're working and authenticate with no distractions
+{{</ notice >}}
+
+
+### References
+
+1. [Consumer Authentication Security Maturity Model (Version 6)](https://danielmiessler.com/p/casmm-consumer-authentication-security-maturity-model/), accessed July 2023
+2. [Response Times: The 3 Important Limits](https://www.nngroup.com/articles/response-times-3-important-limits/), accessed July 2023

@@ -8,68 +8,84 @@ draft: false
 keywords: ["induct", "instate"]
 ---
 
-The following steps are here to help you initialize your new website. If you don't know Hugo at all, we strongly suggest you learn more about it by following this [great documentation for beginners](https://gohugo.io/overview/quickstart/).
+### Documentation
 
-### Create your project
+With buy-in for a WebAuthn deployment, expand the simple onboarding guide you wrote for the pilot group.
 
-Hugo provides a `new` command to create a new website.
+The larger your organization, the higher quality the onboarding documentation needs to be. You be able to help everyone 1-on-1 like you did with the pilot group.
 
-```bash
-hugo new site <new_project>
-```
+As before, create both text & video onboarding guides to allow people a choice.
 
-### Install the theme
+{{< notice tip >}}
+Re-record videos you made during the pilot stage, it's still common for WebAuthn dialogues in browsers to change. Visual differences in dialogues can put off less technical users.
+{{</ notice >}}
 
-Install the **Dot** theme by following [this documentation](https://gohugo.io/themes/installing/)
+### Creative Support & Education
 
-This theme's repository is: https://github.com/themefisher/dot-hugo-documentation-theme.git
+Particularly in larger organizations, you might have to be creative with how you offer support & education to your users.
 
-Alternatively, you can [download the theme as .zip](https://github.com/themefisher/dot-hugo-documentation-theme/archive/master.zip) file and extract it in the `themes` directory
+Consider the following to increase end-user confidence in the project:
+* High-level presentations at all-hands or departmental meetings
+* Video comparisons of the benefits they'll get from WebAuthn
+* Technical, deep-dive presentations for people who want to know how WebAuthn works
+* Pre-booked "Office Hours" where users can come for dedicated support or to ask questions
 
-Or you can check this video documentation for installing this template:
-{{< youtube Srt3lTmRxzQ >}}
+{{< notice tip >}}
+This project will affect everyone in your organization, use it to demonstrate that  IT/Security are there to make things better for users - we don't just say "no"
+{{</ notice >}}
 
-### Basic configuration
+### Rollout
 
-When building the website, you can set a theme by using `--theme` option. However, we suggest you modify the configuration file (`config.toml`) and set the theme as the default.
+I highly recommend splitting the rollout of WebAuthn into three phases
 
-```toml
-# Change the default theme to be use when building the site with Hugo
-theme = "Dot"
-```
+#### Authenticator Deployment
 
+Whatever selection of authenticator you're going to use, get them into the hands of your users first. Warn people if you're going to be mailing a cross-platform authenticator to them.
 
-### Create your first content pages
+If you're using platform authenticators only, confirm that your fleet of devices has the right hardware for WebAuthn.
 
-Then, create content pages inside the previously created chapter. Here are two ways to create content in the chapter:
+{{< notice warning >}}
+Users are anxious to avoid being locked out. Moving onto registration & usage too quickly can be concerning for users who haven't received their authenticator yet.
+{{</ notice >}}
 
-```bash
-hugo new installation/first-content.md
-hugo new installation/second-content/_index.md
-```
+#### Registration Period
 
-Feel free to edit thoses files by adding some sample content and replacing the `title` value in the beginning of the files. 
+Once you're at least 80% deployed with authenticators, configure your IdP to allow user registration of WebAuthn authenticators.
 
-### Launching the website locally
+Use your documentation and "Registration Office Hours" to allow independent & guided registration.
 
-Launch by using the following command:
+Make use of WebAuthn _optional_ at this point. Just like you did with the pilot group, allow users to fallback to other authentication methods if required.
 
-```bash
-hugo serve
-```
+The registration period should last a number of weeks, at least four to six weeks with organizations over 1000 users.
 
-Go to `http://localhost:1313`
+{{< notice warning >}}
+**Do not** attempt to restrict registration to specific types of authenticator. The functionality in IdP's is still immature and the extra complexity is not currently worth it.
+{{</ notice >}}
 
-### Build the website
+{{< notice tip >}}
+Even if you're using cross-platform authenticators, encourage users to register their corporate devices as authenticators **now**.
+{{</ notice >}}
 
-When your site is ready to deploy, run the following command:
+{{< notice tip >}}
+Your IdP may remember the last authentication method that a user used. Encourage users to select the WebAuthn method for use once they've registered, whilst reassuring them that the old method will keep working during the registration period.
+{{</ notice >}}
 
-```bash
-hugo
-```
+#### Cut Over Period
 
-A `public` folder will be generated, containing all static content and assets for your website. It can now be deployed on any web server.
+Immediately after the registration period, configure your IdP so that you're able to enforce use of WebAuthn on a specific group of users. You'll still be allowing registration, and will continue to do so.
 
-{{% notice info%}}
-This website can be automatically published and hosted with [Netlify](https://www.netlify.com/) (Read more about [Automated HUGO deployments with Netlify](https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/)). Alternatively, you can use [Github pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
-{{% /notice %}}
+The cut over period should also last several weeks, but can be shorter than the registration period because the majority of your users should have already taken the action they need to.
+
+Begin placing users **who have already registered** in the enforcement group, starting with a few each day and slowly ramping up to include all registered users towards the end of the period.
+
+There will always be people who leave tasks to the last minute, so increase messaging & the availability of 1-on-1 support in the last week of the period and the first week after.
+
+If you've run the cut over correctly, the final day of the period should pass by unnoticed by almost all of your organization; they're already using WebAuthn, so it won't matter that you're not enforcing its use everywhere.
+
+{{< notice warning >}}
+Use a random selection of registered users each time you add more to the enforcement group. Ramping up by department or other grouping risks leaving problems to later & creating a bigger blast radius if something does go wrong.
+{{</ notice >}}
+
+{{< notice tip >}}
+The slow ramp up of enforcement allows you to test enforced WebAuthn on a growing number of users, whilst giving you time to fix problems before the end of the cut over period.
+{{</ notice >}}

@@ -13,7 +13,7 @@ keywords: ["money","payment"]
 Proving your identity (authentication) has a new technology called WebAuthn (pronounced "web-auth-N"), which is gaining popularity for stopping credential phishing attacks.
 
 {{< notice tip >}}
-It's not required, but can read more about phishing in the [leaders section of this guide](/leaders/).
+It's not required, but you can read more about phishing in the [leaders section of this guide](/leaders/).
 {{</ notice >}}
 
 ### The Future is Passwordless

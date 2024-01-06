@@ -44,6 +44,10 @@ Whatever selection of authenticator you're going to use, get them into the hands
 
 If you're using platform authenticators only, confirm that your fleet of devices has the right hardware for WebAuthn.
 
+{{< notice tip >}}
+Encourage users with cross-platform authenticators to add them onto their physical key chain as soon as they arrive. Expect that some users will immediately lose their authenticator, regardless.
+{{</ notice >}}
+
 {{< notice warning >}}
 Users are anxious to avoid being locked out. Moving onto registration & usage too quickly can be concerning for users who haven't received their authenticator yet.
 {{</ notice >}}

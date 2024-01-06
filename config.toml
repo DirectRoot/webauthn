@@ -4,7 +4,7 @@ baseURL = "https://webauthn.direct-root.com/"
 # theme
 theme = "dot-hugo"
 # site title
-title = "A Role Based Guide to Deploying WebAuthn"
+title = "How to Deploy WebAuthn"
 # disable language
 disableLanguages = ["fr"]
 # google analytics

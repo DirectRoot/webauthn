@@ -22,6 +22,14 @@ WebAuthn is currently considered the most secure form of second factor available
   Aim to achieve WebAuthn as a second factor, not a single passwordless authentication mechanism. Single factor WebAuthn is very difficult to make both secure and usable.
 {{</ notice >}}
 
+### Stop Yubikey OTP
+
+A Yubikey filling in a random string of characters during authentication **is not WebAuthn, it is an OTP**. A Yubikey OTP is still a phishable credential, it's just a different style of one time password.
+
+{{< notice tip >}}
+If you chose to use Yubikeys as part of your WebAuthn rollout, others may initially confuse WebAuthn as Yubikey OTP. You should make it clear that Yubikeys are just one way to "do" WebAuthn.
+{{</ notice >}}
+
 ### Improve User Experience
 
 Push notifications and retrieving TOTPs is slow, I used to regularly experience ten second delays between a push notification being sent, acknowledging it and being authenticated.

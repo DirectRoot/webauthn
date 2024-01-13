@@ -58,7 +58,7 @@ link = "https://www.linkedin.com/in/chris-james-green/"
 languageName = "En"
 languageCode = "en-us"
 weight = 1
-copyright = "Copyright 2023 Chris Green. Theme by [Gethugothemes](https://gethugothemes.com/)"
+copyright = "Copyright &copy; 2023 Chris Green"
 
 # banner
 [Languages.en.params.banner]

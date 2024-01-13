@@ -87,7 +87,7 @@ There will always be people who leave tasks to the last minute, so increase mess
 If you've run the cut over correctly, the final day of the period should pass by unnoticed by almost all of your organization; they're already using WebAuthn, so it won't matter that you're not enforcing its use everywhere.
 
 {{< notice warning >}}
-Use a random selection of registered users each time you add more to the enforcement group. Ramping up by department or other grouping risks leaving problems to later & creating a bigger blast radius if something does go wrong.
+Use a random selection of registered users each time you add more to the enforcement group. Ramping up by department or other grouping risks leaving problems until later & creating a bigger blast radius if something does go wrong.
 {{</ notice >}}
 
 {{< notice tip >}}

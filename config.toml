@@ -58,7 +58,7 @@ link = "https://www.linkedin.com/in/chris-james-green/"
 languageName = "En"
 languageCode = "en-us"
 weight = 1
-copyright = "Copyright &copy; 2023 Chris Green. Theme by [Gethugothemes](https://gethugothemes.com/)"
+copyright = "Copyright 2023 Chris Green. Theme by [Gethugothemes](https://gethugothemes.com/)"
 
 # banner
 [Languages.en.params.banner]
@@ -69,12 +69,12 @@ placeholder = "Search the guide"
 
 # call to action
 [Languages.en.params.cta]
-enable = true
+enable = false
 title = "Need more help or advice? "
 content = "Making your business phishing resistant is not easy, if you've got more questions or want to book a chat then please use the contact button"
 # call to action button
 [Languages.en.params.cta.button]
-enable = true
+enable = false
 label = "Contact"
 link = "contact/"
 
@@ -91,9 +91,9 @@ url = "faq/"
 weight = 2
 
 [[Languages.en.menu.main]]
-name = "contact"
-url = "contact/"
-weight = 3
+#name = "contact"
+#url = "contact/"
+#weight = 3
 
 # Dropdown menu
 [[Languages.en.menu.main]]

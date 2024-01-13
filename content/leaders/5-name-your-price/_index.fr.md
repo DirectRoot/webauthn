@@ -1,7 +1,7 @@
 ---
 title: "Ubuntu"
-date: 2018-12-29T11:02:05+06:00
-lastmod: 2020-01-05T10:42:26+06:00
+date: 2024-01-13T12:00:00+05:00
+lastmod: 2024-01-13T12:00:00+05:00
 weight: 4
 draft: false
 # search related keywords

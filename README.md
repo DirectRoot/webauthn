@@ -4,7 +4,7 @@
 
 ## Editing
 
-This guide is written using [Hugo](https://gohugo.io/), with the [Dot Hugo](https://github.com/gethugothemes/dot-hugo) documentation theme
+This guide is written using [Hugo](https://gohugo.io/), with the [Dot Hugo](https://github.com/gethugothemes/dot-hugo) documentation theme. [Full docs for Dot](https://docs.gethugothemes.com/dot)
 
 * Install Hugo
 * `git clone --recurse-submodules` this repo, the `recurse` ensures you get the theme as a submodule

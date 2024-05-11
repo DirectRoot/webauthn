@@ -39,14 +39,14 @@ light_color = "#f8f9fa"
 font_family = "lato" # Choose font family from : https://fonts.google.com/
 
 # contact form action
-contact_form_action = "#" # contact form works with : https://formspree.io
+contact_form_action = "https://formspree.io/f/xbjnbgev" # contact form works with : https://formspree.io
 
 
 ############################## social links ##############################
 [[params.social]]
-icon = "ti-github" # themify icon pack : https://themify.me/themify-icons
-name = "Github"
-link = "https://github.com/directroot"
+icon = "ti-world" # themify icon pack : https://themify.me/themify-icons
+name = "Main Site"
+link = "https://direct-root.com"
   
 [[params.social]]
 icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
@@ -58,7 +58,7 @@ link = "https://www.linkedin.com/in/chris-james-green/"
 languageName = "En"
 languageCode = "en-us"
 weight = 1
-copyright = "Copyright &copy; 2023 Chris Green"
+copyright = "Copyright &copy; 2024 Chris Green"
 
 # banner
 [Languages.en.params.banner]
@@ -69,12 +69,12 @@ placeholder = "Search the guide"
 
 # call to action
 [Languages.en.params.cta]
-enable = false
-title = "Need more help or advice? "
+enable = true
+title = "Need more help or advice?"
 content = "Making your business phishing resistant is not easy, if you've got more questions or want to book a chat then please use the contact button"
 # call to action button
 [Languages.en.params.cta.button]
-enable = false
+enable = true
 label = "Contact"
 link = "contact/"
 
@@ -91,32 +91,32 @@ weight = 1
 #weight = 2
 
 [[Languages.en.menu.main]]
-#name = "contact"
-#url = "contact/"
-#weight = 3
+name = "contact"
+url = "contact/"
+weight = 3
 
 # Dropdown menu
 [[Languages.en.menu.main]]
 weight = 4
-name = "docs"
+name = "guide"
 hasChildren = true
 
   [[Languages.en.menu.main]]
-  parent = "docs"
-  name = "Installation"
-  url = "installation/"
+  parent = "guide"
+  name = "Leaders"
+  url = "leaders/"
   weight = 1
 
   [[Languages.en.menu.main]]
-  parent = "docs"
-  name = "Billing and Pricing"
-  url = "billing-pricing/"
+  parent = "guide"
+  name = "Users"
+  url = "users/"
   weight = 2
 
   [[Languages.en.menu.main]]
-  parent = "docs"
-  name = "Features"
-  url = "features/"
+  parent = "guide"
+  name = "Security & IT"
+  url = "security-it/"
   weight = 3
 
 
